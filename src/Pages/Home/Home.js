@@ -1,12 +1,18 @@
-import React from 'react'
-import Hero from './Hero'
+import React from "react";
+import styles from "../../style";
+import Hero from "./Hero";
 
 const Home = () => {
   return (
     <>
-        <Hero />
+      <div className={`min-h-[80vh] items-center ${styles.flexStart}`}>
+        
+        <div className={`${styles.boxWidth}`}>
+          <Hero />
+        </div>
+      </div>
     </>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
